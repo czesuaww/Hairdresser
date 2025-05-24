@@ -1,0 +1,9 @@
+.container {
+  padding: 0 4rem;
+  padding-bottom: 5rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  padding: 4rem 0;
+}

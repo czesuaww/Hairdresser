@@ -1,0 +1,12 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--main-color);
+  height: 100vh;
+}
+
+.title {
+  padding-top: 10px;
+  font-size: 1.7rem;
+}

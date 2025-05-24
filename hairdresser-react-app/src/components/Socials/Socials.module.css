@@ -1,0 +1,11 @@
+.socials {
+  padding: 2rem 1rem;
+  background-color: var(--main-color);
+}
+
+.socialsIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  gap: 6rem;
+}
