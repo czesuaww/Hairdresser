@@ -1,6 +1,6 @@
-import stationImg from "../../images/stationone.jpg";
-import stationImgTwo from "../../images/stationtwo.jpg";
-import stationImgThree from "../../images/stationthree.jpg";
+import stationImg from "../../images/stationone.jpeg";
+import stationImgTwo from "../../images/stationtwo.jpeg";
+import stationImgThree from "../../images/stationthree.jpeg";
 import style from "./Workstation.module.css";
 
 const Workstation = () => {
