@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const MiniGallery = () => {
   const images = Object.values(
-    import.meta.glob("../../images/gallery/*.{png,jpg,jpeg,svg}", {
+    import.meta.glob("../../images/gallery/*.{png,jpg,jpeg,svg,webp}", {
       eager: true,
       import: "default",
     })

@@ -13,6 +13,8 @@
   --black-color-alpha: rgba(0, 0, 0, 0.5);
   --text-color: #120303;
   --white-color: #fff;
+  --loader-border-color: #ccc;
+  --loader-border-top-color: #333;
 }
 
 html {

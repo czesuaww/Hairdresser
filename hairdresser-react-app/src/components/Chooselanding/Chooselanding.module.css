@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   gap: 0.8rem;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .landingOption {
@@ -38,6 +38,17 @@
   background-color: var(--main-color);
   color: white;
   transition: 0.3s ease;
+}
+
+.defaultTop {
+  position: relative;
+}
+
+.toTop {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--white-color);
 }
 
 @media (min-width: 450px) {

@@ -4,7 +4,7 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 0;
   width: 100%;
   background-color: var(--white-color);
@@ -14,7 +14,7 @@
   width: 100%;
   object-fit: cover;
   transition: transform 0.3s ease, filter 0.3s ease;
-  aspect-ratio: 4/ 7;
+  aspect-ratio: 5/ 7;
 }
 
 .images:hover {
@@ -28,7 +28,7 @@
   z-index: 1000;
   width: 100%;
   height: 100%;
-  background: var(--main-color); /* lub rgba(255,255,255,0.9) */
+  background: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,8 +37,8 @@
 .loader {
   position: absolute;
   top: 75px;
-  border: 6px solid #ccc;
-  border-top: 6px solid #333;
+  border: 6px solid var(--loader-border-color);
+  border-top: 6px solid var(--loader-border-top-color);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -53,17 +53,6 @@
 .visible {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-}
-
-.toTop {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: var(--white-color);
-}
-
-.defaultTop {
-  position: relative;
 }
 
 @media screen and (max-width: 1200px) {
