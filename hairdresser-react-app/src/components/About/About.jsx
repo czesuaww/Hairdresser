@@ -1,8 +1,34 @@
 import { useEffect, useRef, useState } from "react";
 import style from "./About.module.css";
-import aboutImage from "../../images/aboutme.jpg";
+import aboutMe from "../../images/about/aboutme.jpg";
+import aboutMeTwo from "../../images/about/aboutme2.webp";
+import aboutMeThree from "../../images/about/aboutme3.webp";
+import aboutMeFour from "../../images/about/about4.webp";
 
 const About = () => {
+  const galleryObject = [
+    {
+      id: 1,
+      imageSrc: aboutMe,
+      description: "Image 1",
+    },
+    {
+      id: 2,
+      imageSrc: aboutMeTwo,
+      description: "Image 2",
+    },
+    {
+      id: 3,
+      imageSrc: aboutMeThree,
+      description: "Image 3",
+    },
+    {
+      id: 4,
+      imageSrc: aboutMeFour,
+      description: "Image 4",
+    },
+  ];
+
   const containerRef = useRef(null);
 
   const [isVisible, setIsVisible] = useState(false);
@@ -30,14 +56,22 @@ const About = () => {
   return (
     <div className={`${style.container} ${isVisible ? style.visible : ""}`} ref={containerRef}>
       <div className={style.leftContainer}>
-        <img src={aboutImage} className={style.imgLeft} alt="About" />
+        {galleryObject.map((image) => (
+          <img key={image.id} src={image.imageSrc} alt={image.description} className={style.imgLeft} />
+        ))}
       </div>
       <div className={style.rightContainer}>
-        <h1 className={style.title}>Cześć! Jestem Aga :)</h1>
+        <h1 className={style.title}>Cześć! Mam na imię Aga</h1>
 
-        <p className={style.about}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate tempora, quod aperiam voluptate, placeat doloribus esse dolore laborum, eum dolores qui voluptatum. Doloribus veniam, laboriosam rerum, rem obcaecati quasi nisi explicabo quos in pariatur doloremque amet, quae libero. Ipsa perferendis possimus fugit facere unde praesentium eum ut blanditiis dolores quod est, neque exercitationem autem rem vel sunt earum facilis cum ex eveniet quam qui? Vel est, dolore harum assumenda inventore quae quisquam amet similique perspiciatis fuga distinctio, libero commodi recusandae, molestias earum magnam quasi asperiores ipsum nihil blanditiis ut? Ipsam corporis distinctio voluptas dolorem fuga voluptates a consequuntur hic nulla fugit, voluptatibus, officiis ullam ad, pariatur optio illum. Enim tempore consequatur veniam quas minus et explicabo quae iure natus! Est aspernatur pariatur sint exercitationem rerum saepe tenetur, possimus ab dicta laborum voluptatibus aliquam fuga? Tempore ducimus dolores tenetur, voluptas harum fuga doloribus molestiae praesentium corrupti perferendis a totam illo facere similique repudiandae quos, fugiat consectetur deserunt veritatis voluptates reiciendis autem iure, quaerat natus. Ad, fuga? Quod eaque eius odit qui iusto. Dolorum assumenda, eaque dolore expedita quaerat quis quas, dolor distinctio, facilis cumque ab aliquid! Illo doloribus, minus praesentium perspiciatis maxime rem nam eveniet velit distinctio accusantium repudiandae nostrum reprehenderit.</p>
-
-        <p className={style.more}>Zapraszam do zapoznania się z moją ofertą i przeglądania zdjęć</p>
+        <p className={style.about}>
+          Jestem fryzjerką z wieloletnim doświadczeniem, dla której praca to nie tylko zawód, ale prawdziwa pasja. Uwielbiam tworzyć fryzury, które podkreślają indywidualność moich klientek i klientów — niezależnie od tego, czy chodzi o klasyczne cięcie, metamorfozę kolorystyczną, czy stylizację na specjalną okazję. Stawiam na profesjonalizm, dokładność i pozytywną atmosferę w salonie. Pracuję zarówno stacjonarnie, jak i mobilnie — dojeżdżam do klientek i klientów, bo wiem, jak cenny jest czas i wygoda.
+          <br />
+          <br />
+          Poza pracą zawodową jestem także mamą — codziennie uczę się, jak łączyć macierzyństwo z rozwijaniem swojej pasji. To doświadczenie nauczyło mnie jeszcze lepszej organizacji, empatii i cierpliwości — cech, które doskonale sprawdzają się również w mojej pracy z klientami.
+          <br />
+          <br />
+          Moja droga zawodowa nie zawsze była prosta — były momenty zwątpienia, zmiany ścieżek, powroty do nożyczek i grzebienia, czasem pod górę, czasem na przekór wszystkiemu. Ale dziś mogę z dumą powiedzieć, że robię to, co kocham. Każde strzyżenie, koloryzacja czy metamorfoza to dla mnie nie tylko praca — to spotkanie, rozmowa, zaufanie i wspólne tworzenie czegoś wyjątkowego. Jeśli szukasz fryzjerki z sercem, doświadczeniem i zrozumieniem — serdecznie zapraszam do kontaktu. Niezależnie czy chcesz odwiedzić mój salon, czy wolisz, żebym przyjechała do Ciebie — jestem tu, by zadbać o Twoje włosy i samopoczucie.
+        </p>
       </div>
     </div>
   );

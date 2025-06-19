@@ -1,10 +1,10 @@
-import offerImg from "../../images/Offer.jfif";
+import offerImg from "../../images/offer.png";
 import style from "./Offer.module.css";
 
 const Offer = () => {
   return (
-    <div>
-      <img src={offerImg} alt="oferta cennik" className={style.imgOffer} />
+    <div className={style.container}>
+      <img src={offerImg} alt="oferta cennik" className={style.imgOffer} loading="lazy" />
     </div>
   );
 };

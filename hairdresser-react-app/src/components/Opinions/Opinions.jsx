@@ -7,33 +7,33 @@ import "swiper/css/autoplay";
 const sliderData = [
   {
     id: 1,
-    title: "Wspaniałe wykonanie <3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+    title: "Profesjonalne podejście do zadań",
+    description: "Uważne wysłuchiwanie oczekiwań klienta, dokładność, miła atmosfera, polecam",
   },
   {
     id: 2,
-    title: "Wspaniałe wykonanie <3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+    title: "Polecam Agę",
+    description: "Super podejście do klienta , bardzo miła atmosfera, i oczywiście zawsze robi piękne włoski.. ☺️🥰",
   },
   {
     id: 3,
-    title: "Wspaniałe wykonanie <3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+    title: "Fryzury i koloryzacja pierwsza klasa",
+    description: "Ogrom wiedzy i indywidualne podejście do klienta, pełen profesjonalizm",
   },
   {
     id: 4,
-    title: "Wspaniałe wykonanie <3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+    title: "Najlepsza fryzjerka!!!! ",
+    description: "Wysłucha dokładnie o co chodzi i zawsze doradzi, najlepsza jest!!! Bardzo serdecznie polecam ❤️❤️❤️❤️❤️❤️❤️",
   },
   {
     id: 5,
-    title: "Wspaniałe wykonanie <3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+    title: "Bardzo polecam",
+    description: "Młoda i zdolna 😍",
   },
   {
     id: 6,
-    title: "Wspaniałe wykonanie <3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+    title: "Bardzo miła dziewczyna😀",
+    description: "Jestem bardzo zadowolona z koloryzacji polecam z całego serca",
   },
 ];
 

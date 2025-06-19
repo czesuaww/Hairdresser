@@ -7,6 +7,7 @@ import Address from "./components/Address/Address.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Socials from "./components/Socials/Socials.jsx";
 import MiniGallery from "./components/Minigallery/Minigallery.jsx";
+import styleGallery from "./components/Minigallery/Minigallery.module.css";
 import Offer from "./components/Offer/Offer.jsx";
 import Opinions from "./components/Opinions/Opinions.jsx";
 import "./App.css";
@@ -18,10 +19,13 @@ function App() {
 
   useEffect(() => {
     if (hasInteracted && activeView !== "gallery") {
+      chooseRef.current?.classList.add(styleGallery.defaultTop);
       chooseRef.current?.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
+    } else if (activeView === "gallery") {
+      chooseRef.current?.classList.add(styleGallery.toTop);
     }
   }, [activeView, hasInteracted]);
 
@@ -45,8 +49,8 @@ function App() {
       </div>
 
       {activeView === "gallery" && <MiniGallery />}
-      {activeView === "offer" && <Offer />}
       {activeView === "opinions" && <Opinions />}
+      {activeView !== "opinions" && activeView !== "gallery" && <Offer />}
       {activeView !== "gallery" && <Socials />}
       {activeView !== "gallery" && <Address />}
       <Footer />

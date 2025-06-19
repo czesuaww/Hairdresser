@@ -10,8 +10,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 49.867736,
-  lng: 21.410891,
+  lat: 49.867912,
+  lng: 21.410735,
 };
 
 const Address = () => {

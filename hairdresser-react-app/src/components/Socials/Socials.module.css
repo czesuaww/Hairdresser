@@ -1,5 +1,6 @@
 .socials {
-  padding: 2rem 1rem;
+  padding-top: 0;
+  padding: 2rem 1rem 3rem;
   background-color: var(--main-color);
 }
 
