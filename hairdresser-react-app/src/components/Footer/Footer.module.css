@@ -1,8 +1,47 @@
 .footer {
-  padding: 1rem 2rem;
+  position: relative;
   background-color: var(--main-color);
+  width: 100%;
+  padding: 3rem;
+  /* height: 20vh; */
 }
 
 .footerContent {
-  font-size: 1.7rem;
+  width: 100%;
+  /* font-size: 1.7rem; */
+  /* height: 100%; */
+}
+
+/* .wave {
+  width: 100%;
+} */
+
+.textContainer {
+  /* position: absolute;
+  top: 0px;
+  right: 0;
+  left: 0;
+  bottom: 0; */
+  display: flex;
+  justify-content: center;
+  /* height: 100%; */
+  align-items: center;
+  flex-direction: column;
+  z-index: 222;
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .text {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 730px) {
+  .text {
+    font-size: 2rem;
+  }
 }

@@ -7,7 +7,7 @@ const Header = () => {
     <div className={style.headerContainer}>
       <header className={style.header}>
         <img src={logo} className={style.logo} alt="logo company" />
-        <p className={style.title}>Chcesz poznać więcej moich prac?</p>
+        {/* <p className={style.title}>Chcesz poznać więcej moich prac?</p> */}
         <Arrow />
       </header>
     </div>

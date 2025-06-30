@@ -7,32 +7,32 @@ import "swiper/css/autoplay";
 const sliderData = [
   {
     id: 1,
-    title: "Profesjonalne podejście do zadań",
+    title: "Profesjonalne podejście",
     description: "Uważne wysłuchiwanie oczekiwań klienta, dokładność, miła atmosfera, polecam",
   },
   {
     id: 2,
     title: "Polecam Agę",
-    description: "Super podejście do klienta , bardzo miła atmosfera, i oczywiście zawsze robi piękne włoski.. ☺️🥰",
+    description: "Super podejście do klienta , bardzo miła atmosfera, i oczywiście zawsze robi piękne włoski☺️🥰",
   },
   {
     id: 3,
-    title: "Fryzury i koloryzacja pierwsza klasa",
-    description: "Ogrom wiedzy i indywidualne podejście do klienta, pełen profesjonalizm",
+    title: "Fryzury i koloryzacja ",
+    description: "Pierwsza klasa.Ogrom wiedzy i indywidualne podejście do klienta, pełen profesjonalizm, polecam",
   },
   {
     id: 4,
-    title: "Najlepsza fryzjerka!!!! ",
-    description: "Wysłucha dokładnie o co chodzi i zawsze doradzi, najlepsza jest!!! Bardzo serdecznie polecam ❤️❤️❤️❤️❤️❤️❤️",
+    title: "Najlepsza fryzjerka!",
+    description: "Wysłucha dokładnie o co chodzi i zawsze doradzi, najlepsza jest!!! Bardzo serdecznie polecam",
   },
   {
     id: 5,
-    title: "Bardzo polecam",
-    description: "Młoda i zdolna 😍",
+    title: "Przecudowna kobieta",
+    description: "Mega miła fryzjerka, spełnia wszystkie oczekiwania, naprawdę polecam",
   },
   {
     id: 6,
-    title: "Bardzo miła dziewczyna😀",
+    title: "Bardzo miła",
     description: "Jestem bardzo zadowolona z koloryzacji polecam z całego serca",
   },
 ];
@@ -55,7 +55,7 @@ const Opinions = () => {
           0: {
             slidesPerView: 1,
           },
-          700: {
+          722: {
             slidesPerView: 2,
           },
           1300: {

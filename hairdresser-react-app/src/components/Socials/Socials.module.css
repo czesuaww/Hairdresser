@@ -4,9 +4,18 @@
   background-color: var(--main-color);
 }
 
+.textImg {
+  max-width: 200px;
+}
+
 .socialsIcons {
   display: flex;
   justify-content: center;
   margin-top: 2.5rem;
   gap: 6rem;
+}
+
+.socialImg {
+  width: 100%;
+  /* height: 500px; */
 }

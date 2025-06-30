@@ -1,8 +1,10 @@
 .container {
   padding: 2rem;
 }
+
 .title {
   font-size: 1.1rem;
+  padding-top: 3rem;
 }
 
 .desc {
@@ -18,14 +20,14 @@
 
 :global(.swiper-slide) {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8rem;
   background: var(--main-color);
   display: flex !important;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
-  min-height: 262px;
+  min-height: 225px;
   padding: 2.5rem;
   border-radius: 15px;
 }
